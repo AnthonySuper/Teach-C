@@ -9,4 +9,15 @@
  */
 void copyString(char *str1, char *str2);
 
+// Get the length of a given string, NOT INCLUDING the '\0' at the end
+int stringLength(char *str);
+
+// Compares two strings.
+// If the strings are equal, return 0.
+// If the first char from str1 that does not match is less than the char 
+// in str2, return -1
+// If the first char from str1 that does not match is greater than the char
+// in str2, return 1.
+int stringCompare(const char *str1, const char *str2);
+
 #endif
