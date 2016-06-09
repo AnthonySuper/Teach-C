@@ -1,9 +1,9 @@
-CFLAGS= -Wall -Iinclude/ -g
+CFLAGS= -Wall -Iinclude/ -g -lm
 
 test: test.c linear.o
 	gcc $^ $(CFLAGS) -o $@
 
-linear.o: src/inear.c
+linear.o: src/linear.c
 	gcc -c -o $@ $< $(CFLAGS)
 
 
