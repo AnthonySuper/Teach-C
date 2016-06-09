@@ -17,6 +17,9 @@ typedef struct _matrix {
 // see https://en.wikipedia.org/wiki/Matrix_multiplication
 Point matrixTransform(Matrix m, Point p);
 
+// Multiply two matrixes and return the result.
+// Wikipedia has an example of how to do so, see 
+// https://en.wikipedia.org/wiki/Matrix_multiplication
 Matrix matrixMultiply(Matrix a, Matrix b);
 
 // Turn a matrix into a string you make with malloc
