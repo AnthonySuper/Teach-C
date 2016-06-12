@@ -53,7 +53,7 @@ int main() {
     read = fopen("/tmp/names.txt", "r");
     write = fopen("/tmp/new_names.txt", "w");
     if(read == NULL || write == NULL) {
-        perror("Could not open file!");
+        perror("Could not open file");
         return -1;
     }
     do {
